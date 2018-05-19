@@ -1,0 +1,25 @@
+In CodeBlocks: Ctrl+Shift+N -> Yes -> Save as type: All files -> File Name: <nume_fisier>.<tip_fisier> -> Ok
+
+In cod:
+    #include <fstream>
+	
+    Dupa "using namespace std":
+      ifstream nume_variabila_intrare("nume_fisier.tip_fisier");
+      
+      Exemplu: ifstream f("date.in");
+
+      ofstream nume_variabila_iesire("nume_fisier.tip_fisier");\
+
+      Exemplu: ofstream g("date.out");
+
+Citire/Scriere valori:
+	int x;
+	
+	f>>x; (echivalent cu cin>>x dar din fisier)
+	g<<x; (echivalent cu cout<<x)
+
+	g<<"Numarul este: "<<x<<'\n';
+
+Reminders: Separa numerele prin spatiu sau enter.
+	   Pentru citire de vectori, pune inainte lungimea lui.
+ 
